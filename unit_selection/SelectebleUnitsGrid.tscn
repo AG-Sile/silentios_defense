@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://unit_selection/SelectableUnitsGridContainer.tscn" type="PackedScene" id=1]
+
+[node name="SelectableUnitsView" type="CenterContainer"]
+margin_right = 540.0
+margin_bottom = 64.0
+input_pass_on_modal_close_click = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SelectableUnitsGridContainer" parent="." instance=ExtResource( 1 )]
+margin_top = 0.0
+margin_bottom = 64.0
+input_pass_on_modal_close_click = false

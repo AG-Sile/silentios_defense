@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://NextWaveButton.gd" type="Script" id=1]
+
+[node name="ColorRect" type="ColorRect"]
+margin_right = 624.0
+margin_bottom = 64.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextWaveButton" type="Button" parent="."]
+margin_left = 520.0
+margin_top = 16.0
+margin_right = 601.0
+margin_bottom = 48.0
+text = "Next Wave"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GoldAndWaveLabels" type="ColorRect" parent="."]
+margin_right = 208.0
+margin_bottom = 48.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GoldLabel" type="RichTextLabel" parent="GoldAndWaveLabels"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 8.0
+margin_right = 48.0
+margin_bottom = 16.0
+text = "Gold:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GoldAmount" type="RichTextLabel" parent="GoldAndWaveLabels"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 48.0
+margin_right = -128.0
+margin_bottom = 16.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WaveLabel" type="RichTextLabel" parent="GoldAndWaveLabels"]
+margin_left = 248.0
+margin_top = 24.0
+margin_right = 352.0
+margin_bottom = 40.0
+text = "Wave Number:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WaveNumber" type="RichTextLabel" parent="GoldAndWaveLabels"]
+margin_left = 352.0
+margin_top = 24.0
+margin_right = 400.0
+margin_bottom = 40.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="NextWaveButton" to="NextWaveButton" method="_on_NextWaveButton_pressed"]

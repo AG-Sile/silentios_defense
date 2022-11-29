@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=4 format=2]
+
+[ext_resource path="res://units/UnitBuilder.gd" type="Script" id=1]
+[ext_resource path="res://units/Friendly/Peasant/SinglePeasant.png" type="Texture" id=2]
+[ext_resource path="res://units/Friendly/Peasant/PeasantLive.tscn" type="PackedScene" id=3]
+
+[resource]
+script = ExtResource( 1 )
+selected = false
+unit_name = "Peasant"
+texture = ExtResource( 2 )
+gold_cost = 5
+unit_scene = ExtResource( 3 )

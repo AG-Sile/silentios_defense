@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://tiles/grass and cliffs/inventory_slot.png" type="Texture" id=1]
+[ext_resource path="res://unit_selection/BuildableUnitSlot.gd" type="Script" id=2]
+
+[node name="BuildableUnitSlot" type="CenterContainer"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 32, 32 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+
+[node name="TextureRect" type="Sprite" parent="."]
+position = Vector2( 32, 32 )
+texture = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 32.0
+margin_bottom = 32.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+margin_left = 13.0
+margin_top = 22.0
+margin_right = 45.0
+margin_bottom = 38.0
+rect_scale = Vector2( 0.5, 0.5 )
+text = " 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="ColorRect"]
+margin_left = -5.0
+margin_top = 22.0
+margin_right = 27.0
+margin_bottom = 38.0
+rect_scale = Vector2( 0.5, 0.5 )
+text = "Cost:"
+__meta__ = {
+"_edit_use_anchors_": false
+}

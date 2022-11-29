@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Hurtbox.tscn" type="PackedScene" id=1]
+[ext_resource path="res://units/UnitLive.gd" type="Script" id=2]
+[ext_resource path="res://units/Stats.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Hitbox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://units/EnemyDetectionZone.gd" type="Script" id=5]
+[ext_resource path="res://units/healthbar bg.png" type="Texture" id=6]
+[ext_resource path="res://units/healthbar front.png" type="Texture" id=7]
+[ext_resource path="res://units/AttackRange.gd" type="Script" id=8]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 138.13
+
+[node name="UnitLive" type="KinematicBody2D"]
+scale = Vector2( 0.5, 0.5 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Hurtbox" parent="." instance=ExtResource( 1 )]
+collision_layer = 4
+collision_mask = 0
+
+[node name="Sprite2" type="Sprite" parent="."]
+
+[node name="AttackSprite" type="Sprite" parent="."]
+visible = false
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+
+[node name="HitboxPivot" type="Position2D" parent="."]
+
+[node name="Hitbox" parent="HitboxPivot" instance=ExtResource( 4 )]
+collision_layer = 0
+collision_mask = 8
+
+[node name="Stats" parent="." instance=ExtResource( 3 )]
+max_health = 5
+
+[node name="EnemyDetectionZone" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyDetectionZone"]
+shape = SubResource( 1 )
+
+[node name="Healthbar" type="TextureProgress" parent="."]
+margin_right = 66.0
+margin_bottom = 8.0
+texture_under = ExtResource( 6 )
+texture_progress = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AttackRange" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
+script = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange"]
+
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
+[connection signal="body_entered" from="EnemyDetectionZone" to="EnemyDetectionZone" method="_on_EnemyDetectionZone_body_entered"]
+[connection signal="body_exited" from="EnemyDetectionZone" to="EnemyDetectionZone" method="_on_EnemyDetectionZone_body_exited"]
+[connection signal="area_entered" from="AttackRange" to="." method="_on_AttackRange_area_entered"]
+[connection signal="area_entered" from="AttackRange" to="AttackRange" method="_on_AttackRange_area_entered"]
+[connection signal="area_exited" from="AttackRange" to="AttackRange" method="_on_AttackRange_area_exited"]
+
+[editable path="Hurtbox"]
+[editable path="HitboxPivot/Hitbox"]
+[editable path="Stats"]

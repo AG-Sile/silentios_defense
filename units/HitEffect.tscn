@@ -1,0 +1,43 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://units/bird_deadz-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://units/Effect.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 33, 33 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 33, 0, 33, 33 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 66, 0, 33, 33 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 99, 0, 33, 33 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 132, 0, 33, 33 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"loop": false,
+"name": "Animate",
+"speed": 10.0
+} ]
+
+[node name="HitEffect" type="AnimatedSprite"]
+frames = SubResource( 1 )
+animation = "Animate"
+frame = 4
+script = ExtResource( 2 )

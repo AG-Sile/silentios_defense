@@ -1,0 +1,716 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://buildable_area/BuildableSlotDisplay.tscn" type="PackedScene" id=1]
+[ext_resource path="res://buildable_area/BuildableDisplay.gd" type="Script" id=2]
+
+[node name="BuildableDisplay" type="GridContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -160.0
+margin_bottom = -168.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 15
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BuildableSlotDisplay" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay2" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay3" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay4" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay5" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay6" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay7" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay8" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay9" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay10" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay11" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay12" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay13" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay14" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay15" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+
+[node name="BuildableSlotDisplay16" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 64.0
+margin_right = 64.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay17" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 128.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay18" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 128.0
+margin_top = 64.0
+margin_right = 192.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay19" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 192.0
+margin_top = 64.0
+margin_right = 256.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay20" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 256.0
+margin_top = 64.0
+margin_right = 320.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay21" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 320.0
+margin_top = 64.0
+margin_right = 384.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay22" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 384.0
+margin_top = 64.0
+margin_right = 448.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay23" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 448.0
+margin_top = 64.0
+margin_right = 512.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay24" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 64.0
+margin_right = 576.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay25" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 576.0
+margin_top = 64.0
+margin_right = 640.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay26" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 640.0
+margin_top = 64.0
+margin_right = 704.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay27" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 704.0
+margin_top = 64.0
+margin_right = 768.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay28" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 768.0
+margin_top = 64.0
+margin_right = 832.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay29" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 832.0
+margin_top = 64.0
+margin_right = 896.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay30" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 896.0
+margin_top = 64.0
+margin_right = 960.0
+margin_bottom = 128.0
+
+[node name="BuildableSlotDisplay31" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 128.0
+margin_right = 64.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay32" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 64.0
+margin_top = 128.0
+margin_right = 128.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay33" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 128.0
+margin_top = 128.0
+margin_right = 192.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay34" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 192.0
+margin_top = 128.0
+margin_right = 256.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay35" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 256.0
+margin_top = 128.0
+margin_right = 320.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay36" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 320.0
+margin_top = 128.0
+margin_right = 384.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay37" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 384.0
+margin_top = 128.0
+margin_right = 448.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay38" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 448.0
+margin_top = 128.0
+margin_right = 512.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay39" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 128.0
+margin_right = 576.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay40" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 576.0
+margin_top = 128.0
+margin_right = 640.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay41" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 640.0
+margin_top = 128.0
+margin_right = 704.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay42" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 704.0
+margin_top = 128.0
+margin_right = 768.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay43" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 768.0
+margin_top = 128.0
+margin_right = 832.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay44" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 832.0
+margin_top = 128.0
+margin_right = 896.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay45" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 896.0
+margin_top = 128.0
+margin_right = 960.0
+margin_bottom = 192.0
+
+[node name="BuildableSlotDisplay46" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 192.0
+margin_right = 64.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay47" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 64.0
+margin_top = 192.0
+margin_right = 128.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay48" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 128.0
+margin_top = 192.0
+margin_right = 192.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay49" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 192.0
+margin_top = 192.0
+margin_right = 256.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay50" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 256.0
+margin_top = 192.0
+margin_right = 320.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay51" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 320.0
+margin_top = 192.0
+margin_right = 384.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay52" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 384.0
+margin_top = 192.0
+margin_right = 448.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay53" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 448.0
+margin_top = 192.0
+margin_right = 512.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay54" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 192.0
+margin_right = 576.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay55" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 576.0
+margin_top = 192.0
+margin_right = 640.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay56" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 640.0
+margin_top = 192.0
+margin_right = 704.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay57" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 704.0
+margin_top = 192.0
+margin_right = 768.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay58" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 768.0
+margin_top = 192.0
+margin_right = 832.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay59" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 832.0
+margin_top = 192.0
+margin_right = 896.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay60" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 896.0
+margin_top = 192.0
+margin_right = 960.0
+margin_bottom = 256.0
+
+[node name="BuildableSlotDisplay61" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 256.0
+margin_right = 64.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay62" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 64.0
+margin_top = 256.0
+margin_right = 128.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay63" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 128.0
+margin_top = 256.0
+margin_right = 192.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay64" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 192.0
+margin_top = 256.0
+margin_right = 256.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay65" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 256.0
+margin_top = 256.0
+margin_right = 320.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay66" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 320.0
+margin_top = 256.0
+margin_right = 384.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay67" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 384.0
+margin_top = 256.0
+margin_right = 448.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay68" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 448.0
+margin_top = 256.0
+margin_right = 512.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay69" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 256.0
+margin_right = 576.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay70" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 576.0
+margin_top = 256.0
+margin_right = 640.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay71" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 640.0
+margin_top = 256.0
+margin_right = 704.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay72" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 704.0
+margin_top = 256.0
+margin_right = 768.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay73" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 768.0
+margin_top = 256.0
+margin_right = 832.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay74" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 832.0
+margin_top = 256.0
+margin_right = 896.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay75" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 896.0
+margin_top = 256.0
+margin_right = 960.0
+margin_bottom = 320.0
+
+[node name="BuildableSlotDisplay76" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 320.0
+margin_right = 64.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay77" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 64.0
+margin_top = 320.0
+margin_right = 128.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay78" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 128.0
+margin_top = 320.0
+margin_right = 192.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay79" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 192.0
+margin_top = 320.0
+margin_right = 256.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay80" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 256.0
+margin_top = 320.0
+margin_right = 320.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay81" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 320.0
+margin_top = 320.0
+margin_right = 384.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay82" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 384.0
+margin_top = 320.0
+margin_right = 448.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay83" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 448.0
+margin_top = 320.0
+margin_right = 512.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay84" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 320.0
+margin_right = 576.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay85" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 576.0
+margin_top = 320.0
+margin_right = 640.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay86" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 640.0
+margin_top = 320.0
+margin_right = 704.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay87" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 704.0
+margin_top = 320.0
+margin_right = 768.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay88" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 768.0
+margin_top = 320.0
+margin_right = 832.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay89" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 832.0
+margin_top = 320.0
+margin_right = 896.0
+margin_bottom = 384.0
+
+[node name="BuildableSlotDisplay90" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 896.0
+margin_top = 320.0
+margin_right = 960.0
+margin_bottom = 384.0

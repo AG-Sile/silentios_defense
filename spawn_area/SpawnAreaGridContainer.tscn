@@ -1,0 +1,337 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://UnbuildableUnitContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://spawn_area/SpawnDisplay.gd" type="Script" id=2]
+[ext_resource path="res://spawn_area/SpawnUnitContainer.gd" type="Script" id=3]
+
+[node name="SpawnDisplay" type="GridContainer"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 20.0
+margin_bottom = 20.0
+columns = 5
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpawnUnitContainer" parent="." instance=ExtResource( 1 )]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer2" parent="." instance=ExtResource( 1 )]
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer3" parent="." instance=ExtResource( 1 )]
+margin_left = 136.0
+margin_right = 200.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer4" parent="." instance=ExtResource( 1 )]
+margin_left = 204.0
+margin_right = 268.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer5" parent="." instance=ExtResource( 1 )]
+margin_left = 272.0
+margin_right = 336.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer6" parent="." instance=ExtResource( 1 )]
+margin_top = 68.0
+margin_right = 64.0
+margin_bottom = 132.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer7" parent="." instance=ExtResource( 1 )]
+margin_left = 68.0
+margin_top = 68.0
+margin_right = 132.0
+margin_bottom = 132.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer8" parent="." instance=ExtResource( 1 )]
+margin_left = 136.0
+margin_top = 68.0
+margin_right = 200.0
+margin_bottom = 132.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer9" parent="." instance=ExtResource( 1 )]
+margin_left = 204.0
+margin_top = 68.0
+margin_right = 268.0
+margin_bottom = 132.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer10" parent="." instance=ExtResource( 1 )]
+margin_left = 272.0
+margin_top = 68.0
+margin_right = 336.0
+margin_bottom = 132.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer11" parent="." instance=ExtResource( 1 )]
+margin_top = 136.0
+margin_right = 64.0
+margin_bottom = 200.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer12" parent="." instance=ExtResource( 1 )]
+margin_left = 68.0
+margin_top = 136.0
+margin_right = 132.0
+margin_bottom = 200.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer13" parent="." instance=ExtResource( 1 )]
+margin_left = 136.0
+margin_top = 136.0
+margin_right = 200.0
+margin_bottom = 200.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer14" parent="." instance=ExtResource( 1 )]
+margin_left = 204.0
+margin_top = 136.0
+margin_right = 268.0
+margin_bottom = 200.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer15" parent="." instance=ExtResource( 1 )]
+margin_left = 272.0
+margin_top = 136.0
+margin_right = 336.0
+margin_bottom = 200.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer16" parent="." instance=ExtResource( 1 )]
+margin_top = 204.0
+margin_right = 64.0
+margin_bottom = 268.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer17" parent="." instance=ExtResource( 1 )]
+margin_left = 68.0
+margin_top = 204.0
+margin_right = 132.0
+margin_bottom = 268.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer18" parent="." instance=ExtResource( 1 )]
+margin_left = 136.0
+margin_top = 204.0
+margin_right = 200.0
+margin_bottom = 268.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer19" parent="." instance=ExtResource( 1 )]
+margin_left = 204.0
+margin_top = 204.0
+margin_right = 268.0
+margin_bottom = 268.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer20" parent="." instance=ExtResource( 1 )]
+margin_left = 272.0
+margin_top = 204.0
+margin_right = 336.0
+margin_bottom = 268.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer21" parent="." instance=ExtResource( 1 )]
+margin_top = 272.0
+margin_right = 64.0
+margin_bottom = 336.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer22" parent="." instance=ExtResource( 1 )]
+margin_left = 68.0
+margin_top = 272.0
+margin_right = 132.0
+margin_bottom = 336.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer23" parent="." instance=ExtResource( 1 )]
+margin_left = 136.0
+margin_top = 272.0
+margin_right = 200.0
+margin_bottom = 336.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer24" parent="." instance=ExtResource( 1 )]
+margin_left = 204.0
+margin_top = 272.0
+margin_right = 268.0
+margin_bottom = 336.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer25" parent="." instance=ExtResource( 1 )]
+margin_left = 272.0
+margin_top = 272.0
+margin_right = 336.0
+margin_bottom = 336.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer26" parent="." instance=ExtResource( 1 )]
+margin_top = 340.0
+margin_right = 64.0
+margin_bottom = 404.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer27" parent="." instance=ExtResource( 1 )]
+margin_left = 68.0
+margin_top = 340.0
+margin_right = 132.0
+margin_bottom = 404.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer28" parent="." instance=ExtResource( 1 )]
+margin_left = 136.0
+margin_top = 340.0
+margin_right = 200.0
+margin_bottom = 404.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer29" parent="." instance=ExtResource( 1 )]
+margin_left = 204.0
+margin_top = 340.0
+margin_right = 268.0
+margin_bottom = 404.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="SpawnUnitContainer30" parent="." instance=ExtResource( 1 )]
+margin_left = 272.0
+margin_top = 340.0
+margin_right = 336.0
+margin_bottom = 404.0
+rect_scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[connection signal="mouse_entered" from="SpawnUnitContainer" to="SpawnUnitContainer" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer" to="SpawnUnitContainer" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer2" to="SpawnUnitContainer2" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer2" to="SpawnUnitContainer2" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer3" to="SpawnUnitContainer3" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer3" to="SpawnUnitContainer3" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer4" to="SpawnUnitContainer4" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer4" to="SpawnUnitContainer4" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer5" to="SpawnUnitContainer5" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer5" to="SpawnUnitContainer5" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer6" to="SpawnUnitContainer6" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer6" to="SpawnUnitContainer6" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer7" to="SpawnUnitContainer7" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer7" to="SpawnUnitContainer7" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer8" to="SpawnUnitContainer8" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer8" to="SpawnUnitContainer8" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer9" to="SpawnUnitContainer9" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer9" to="SpawnUnitContainer9" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer10" to="SpawnUnitContainer10" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer10" to="SpawnUnitContainer10" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer11" to="SpawnUnitContainer11" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer11" to="SpawnUnitContainer11" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer12" to="SpawnUnitContainer12" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer12" to="SpawnUnitContainer12" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer13" to="SpawnUnitContainer13" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer13" to="SpawnUnitContainer13" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer14" to="SpawnUnitContainer14" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer14" to="SpawnUnitContainer14" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer15" to="SpawnUnitContainer15" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer15" to="SpawnUnitContainer15" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer16" to="SpawnUnitContainer16" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer16" to="SpawnUnitContainer16" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer17" to="SpawnUnitContainer17" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer17" to="SpawnUnitContainer17" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer18" to="SpawnUnitContainer18" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer18" to="SpawnUnitContainer18" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer19" to="SpawnUnitContainer19" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer19" to="SpawnUnitContainer19" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer20" to="SpawnUnitContainer20" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer20" to="SpawnUnitContainer20" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer21" to="SpawnUnitContainer21" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer21" to="SpawnUnitContainer21" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer22" to="SpawnUnitContainer22" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer22" to="SpawnUnitContainer22" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer23" to="SpawnUnitContainer23" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer23" to="SpawnUnitContainer23" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer24" to="SpawnUnitContainer24" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer24" to="SpawnUnitContainer24" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer25" to="SpawnUnitContainer25" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer25" to="SpawnUnitContainer25" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer26" to="SpawnUnitContainer26" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer26" to="SpawnUnitContainer26" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer27" to="SpawnUnitContainer27" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer27" to="SpawnUnitContainer27" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer28" to="SpawnUnitContainer28" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer28" to="SpawnUnitContainer28" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer29" to="SpawnUnitContainer29" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer29" to="SpawnUnitContainer29" method="_on_SpawnUnitContainer_mouse_exited"]
+[connection signal="mouse_entered" from="SpawnUnitContainer30" to="SpawnUnitContainer30" method="_on_SpawnUnitContainer_mouse_entered"]
+[connection signal="mouse_exited" from="SpawnUnitContainer30" to="SpawnUnitContainer30" method="_on_SpawnUnitContainer_mouse_exited"]
+
+[editable path="SpawnUnitContainer"]
+[editable path="SpawnUnitContainer2"]
+[editable path="SpawnUnitContainer3"]
+[editable path="SpawnUnitContainer4"]
+[editable path="SpawnUnitContainer5"]
+[editable path="SpawnUnitContainer6"]
+[editable path="SpawnUnitContainer7"]
+[editable path="SpawnUnitContainer8"]
+[editable path="SpawnUnitContainer9"]
+[editable path="SpawnUnitContainer10"]
+[editable path="SpawnUnitContainer11"]
+[editable path="SpawnUnitContainer12"]
+[editable path="SpawnUnitContainer13"]
+[editable path="SpawnUnitContainer14"]
+[editable path="SpawnUnitContainer15"]
+[editable path="SpawnUnitContainer16"]
+[editable path="SpawnUnitContainer17"]
+[editable path="SpawnUnitContainer18"]
+[editable path="SpawnUnitContainer19"]
+[editable path="SpawnUnitContainer20"]
+[editable path="SpawnUnitContainer21"]
+[editable path="SpawnUnitContainer22"]
+[editable path="SpawnUnitContainer23"]
+[editable path="SpawnUnitContainer24"]
+[editable path="SpawnUnitContainer25"]
+[editable path="SpawnUnitContainer26"]
+[editable path="SpawnUnitContainer27"]
+[editable path="SpawnUnitContainer28"]
+[editable path="SpawnUnitContainer29"]
+[editable path="SpawnUnitContainer30"]

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://units/Friendly/Peasant/PeasantLive.tscn" type="PackedScene" id=1]
+[ext_resource path="res://buildable_area/buildable_grid.gd" type="Script" id=2]
+
+[resource]
+script = ExtResource( 2 )
+units = [ null, null, ExtResource( 1 ), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, ExtResource( 1 ), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]

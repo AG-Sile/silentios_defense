@@ -1,0 +1,412 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UnbuildableUnitContainer.tscn" type="PackedScene" id=1]
+
+[node name="HillsGridContainer" type="GridContainer"]
+margin_right = 640.0
+margin_bottom = 64.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" parent="." instance=ExtResource( 1 )]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer2" parent="." instance=ExtResource( 1 )]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer3" parent="." instance=ExtResource( 1 )]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer4" parent="." instance=ExtResource( 1 )]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer5" parent="." instance=ExtResource( 1 )]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer6" parent="." instance=ExtResource( 1 )]
+margin_left = 320.0
+margin_right = 384.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer7" parent="." instance=ExtResource( 1 )]
+margin_left = 384.0
+margin_right = 448.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer8" parent="." instance=ExtResource( 1 )]
+margin_left = 448.0
+margin_right = 512.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer9" parent="." instance=ExtResource( 1 )]
+margin_left = 512.0
+margin_right = 576.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer10" parent="." instance=ExtResource( 1 )]
+margin_left = 576.0
+margin_right = 640.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer11" parent="." instance=ExtResource( 1 )]
+margin_left = 640.0
+margin_right = 704.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer12" parent="." instance=ExtResource( 1 )]
+margin_left = 704.0
+margin_right = 768.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer13" parent="." instance=ExtResource( 1 )]
+margin_left = 768.0
+margin_right = 832.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer14" parent="." instance=ExtResource( 1 )]
+margin_left = 832.0
+margin_right = 896.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer15" parent="." instance=ExtResource( 1 )]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer16" parent="." instance=ExtResource( 1 )]
+margin_left = 960.0
+margin_right = 1024.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer17" parent="." instance=ExtResource( 1 )]
+margin_left = 1024.0
+margin_right = 1088.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer18" parent="." instance=ExtResource( 1 )]
+margin_left = 1088.0
+margin_right = 1152.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer19" parent="." instance=ExtResource( 1 )]
+margin_left = 1152.0
+margin_right = 1216.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer20" parent="." instance=ExtResource( 1 )]
+margin_left = 1216.0
+margin_right = 1280.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer21" parent="." instance=ExtResource( 1 )]
+margin_top = 64.0
+margin_right = 64.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer22" parent="." instance=ExtResource( 1 )]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 128.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer23" parent="." instance=ExtResource( 1 )]
+margin_left = 128.0
+margin_top = 64.0
+margin_right = 192.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer24" parent="." instance=ExtResource( 1 )]
+margin_left = 192.0
+margin_top = 64.0
+margin_right = 256.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer25" parent="." instance=ExtResource( 1 )]
+margin_left = 256.0
+margin_top = 64.0
+margin_right = 320.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer26" parent="." instance=ExtResource( 1 )]
+margin_left = 320.0
+margin_top = 64.0
+margin_right = 384.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer27" parent="." instance=ExtResource( 1 )]
+margin_left = 384.0
+margin_top = 64.0
+margin_right = 448.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer28" parent="." instance=ExtResource( 1 )]
+margin_left = 448.0
+margin_top = 64.0
+margin_right = 512.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer29" parent="." instance=ExtResource( 1 )]
+margin_left = 512.0
+margin_top = 64.0
+margin_right = 576.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer30" parent="." instance=ExtResource( 1 )]
+margin_left = 576.0
+margin_top = 64.0
+margin_right = 640.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer31" parent="." instance=ExtResource( 1 )]
+margin_left = 640.0
+margin_top = 64.0
+margin_right = 704.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer32" parent="." instance=ExtResource( 1 )]
+margin_left = 704.0
+margin_top = 64.0
+margin_right = 768.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer33" parent="." instance=ExtResource( 1 )]
+margin_left = 768.0
+margin_top = 64.0
+margin_right = 832.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer34" parent="." instance=ExtResource( 1 )]
+margin_left = 832.0
+margin_top = 64.0
+margin_right = 896.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer35" parent="." instance=ExtResource( 1 )]
+margin_left = 896.0
+margin_top = 64.0
+margin_right = 960.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer36" parent="." instance=ExtResource( 1 )]
+margin_left = 960.0
+margin_top = 64.0
+margin_right = 1024.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer37" parent="." instance=ExtResource( 1 )]
+margin_left = 1024.0
+margin_top = 64.0
+margin_right = 1088.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer38" parent="." instance=ExtResource( 1 )]
+margin_left = 1088.0
+margin_top = 64.0
+margin_right = 1152.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer39" parent="." instance=ExtResource( 1 )]
+margin_left = 1152.0
+margin_top = 64.0
+margin_right = 1216.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer40" parent="." instance=ExtResource( 1 )]
+margin_left = 1216.0
+margin_top = 64.0
+margin_right = 1280.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer41" parent="." instance=ExtResource( 1 )]
+margin_top = 128.0
+margin_right = 64.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer42" parent="." instance=ExtResource( 1 )]
+margin_left = 64.0
+margin_top = 128.0
+margin_right = 128.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer43" parent="." instance=ExtResource( 1 )]
+margin_left = 128.0
+margin_top = 128.0
+margin_right = 192.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer44" parent="." instance=ExtResource( 1 )]
+margin_left = 192.0
+margin_top = 128.0
+margin_right = 256.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer45" parent="." instance=ExtResource( 1 )]
+margin_left = 256.0
+margin_top = 128.0
+margin_right = 320.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer46" parent="." instance=ExtResource( 1 )]
+margin_left = 320.0
+margin_top = 128.0
+margin_right = 384.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer47" parent="." instance=ExtResource( 1 )]
+margin_left = 384.0
+margin_top = 128.0
+margin_right = 448.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer48" parent="." instance=ExtResource( 1 )]
+margin_left = 448.0
+margin_top = 128.0
+margin_right = 512.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer49" parent="." instance=ExtResource( 1 )]
+margin_left = 512.0
+margin_top = 128.0
+margin_right = 576.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer50" parent="." instance=ExtResource( 1 )]
+margin_left = 576.0
+margin_top = 128.0
+margin_right = 640.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer51" parent="." instance=ExtResource( 1 )]
+margin_left = 640.0
+margin_top = 128.0
+margin_right = 704.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer52" parent="." instance=ExtResource( 1 )]
+margin_left = 704.0
+margin_top = 128.0
+margin_right = 768.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer53" parent="." instance=ExtResource( 1 )]
+margin_left = 768.0
+margin_top = 128.0
+margin_right = 832.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer54" parent="." instance=ExtResource( 1 )]
+margin_left = 832.0
+margin_top = 128.0
+margin_right = 896.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer55" parent="." instance=ExtResource( 1 )]
+margin_left = 896.0
+margin_top = 128.0
+margin_right = 960.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer56" parent="." instance=ExtResource( 1 )]
+margin_left = 960.0
+margin_top = 128.0
+margin_right = 1024.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer57" parent="." instance=ExtResource( 1 )]
+margin_left = 1024.0
+margin_top = 128.0
+margin_right = 1088.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer58" parent="." instance=ExtResource( 1 )]
+margin_left = 1088.0
+margin_top = 128.0
+margin_right = 1152.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer59" parent="." instance=ExtResource( 1 )]
+margin_left = 1152.0
+margin_top = 128.0
+margin_right = 1216.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
+
+[node name="CenterContainer60" parent="." instance=ExtResource( 1 )]
+margin_left = 1216.0
+margin_top = 128.0
+margin_right = 1280.0
+margin_bottom = 192.0
+rect_scale = Vector2( 1, 1 )
