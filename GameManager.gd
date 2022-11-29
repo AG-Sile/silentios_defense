@@ -15,15 +15,13 @@ func _ready():
 func gold_display_set(new_value):
 	gold = new_value
 	var main = get_tree().current_scene	
-	var gold_display = main.get_node("WaveManager")
-	print(gold_display)
-	#gold_display.text = str(gold)
-# TODO
+	var gold_display = main.get_node("WaveManager/GoldAndWaveLabels/GoldAmount")
+	gold_display.text = str(gold)
+
+
 func end_wave():
 	wave_in_progress = false
 	reset_units()
-
-	#buildableArea.update_buildable_display()
 	
 func start_wave():
 	wave_number += 0
@@ -34,8 +32,6 @@ func spawn_enemy():
 	var wave_enemies_info = wave_resource.new().wave_enemies[wave_number]
 	var main = get_tree().current_scene
 	var spawnable_unit_node = main.get_node("SpawnableUnits")
-	#var spawn_area_container = spawnable_unit_node.get_child(0)
-	#spawn_area_container.spawn_enemy(wave_enemies_info["unit"], 0)	
 	for enemy_number in wave_enemies_info["number_of_units"]:
 		var spawn_area_container = spawnable_unit_node.get_child(enemy_number)
 		spawn_area_container.spawn_enemy(wave_enemies_info["unit"], enemy_number)

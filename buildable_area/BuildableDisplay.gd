@@ -7,7 +7,7 @@ func _ready():
 	update_buildable_display()
 	
 func update_buildable_display():
-	print("updating buildable display..")
+
 	for unit_index in buildable.units.size():
 		update_buildable_slot_display(unit_index)
 
@@ -15,11 +15,5 @@ func update_buildable_slot_display(unit_index):
 	var unitSlotDisplay = get_child(unit_index)
 	var childer = get_child_count()
 	var unit = buildable.units[unit_index]
-	if unitSlotDisplay == null:
-		print("index of enpty")
-		print(unit_index)
-		print("childer:")
-		print(childer)
-	else:
-		unitSlotDisplay.display_unit(unit)
+	unitSlotDisplay.display_unit(unit)
 	
