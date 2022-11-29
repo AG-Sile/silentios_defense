@@ -49,10 +49,11 @@ func seek_units():
 func _on_Hurtbox_area_entered(area):
 	if area.name == "Hitbox":
 		var adjusted_damage = min(stats.health, area.damage)
-		stats.health -= adjusted_damage
-		healthbar.value -= adjusted_damage
-		hurtbox.create_hit_effect()
-		hurtbox.start_invincibility(0.5)
+		if adjusted_damage > 0:
+			stats.health -= adjusted_damage
+			healthbar.value -= adjusted_damage
+			hurtbox.create_hit_effect()
+			hurtbox.start_invincibility(0.5)
 
 func chase_state(delta):
 	var unit = unitDetectionZone.unit
@@ -79,7 +80,6 @@ func _on_AttackRange_area_entered(area):
 
 
 func _on_Stats_no_health():
-	print("enemy died :(")
 	GameManager.gold += stats.gold_value
 	GameManager.enemies -= 1
 	if GameManager.enemies == 0:
