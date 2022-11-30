@@ -6,11 +6,11 @@ var spawn_area_grid = preload("res://spawn_area/SpawnAreaGridContainer.tscn")
 var spawnable_unit = preload("res://SpawnableUnit.tscn")
 var enemies = 0
 onready var wave_in_progress = false
-export var gold = 0 setget gold_display_set
-export var wave_number = 1
+export var gold = 50 setget gold_display_set
+export var wave_number = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	self.gold = 20
 
 func gold_display_set(new_value):
 	gold = new_value
@@ -24,7 +24,8 @@ func end_wave():
 	reset_units()
 	
 func start_wave():
-	wave_number += 0
+	wave_number += 1
+	print(wave_number)
 	wave_in_progress = true
 	spawn_enemy()
 	

@@ -9,7 +9,7 @@ enum {
 	CHASE,
 	ATTACK
 }
-var state = CHASE
+export var state = CHASE
 var velocity = Vector2.ZERO
 onready var stats = $Stats
 onready var animationTree = $AnimationTree
@@ -47,6 +47,7 @@ func _physics_process(delta):
 
 func seek_enemies():
 	if enemyDetectionZone.can_seek_enemy():
+		print("can seek enemy!")
 		state = CHASE
 	
 func _on_Hurtbox_area_entered(area):
@@ -85,6 +86,7 @@ func attack_state():
 
 
 func attack_animation_finished():
+	print("about to go idle")
 	sprite.visible = true
 	attack_sprite.visible = false
 	state = IDLE

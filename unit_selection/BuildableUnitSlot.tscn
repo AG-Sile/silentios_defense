@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://tiles/grass and cliffs/inventory_slot.png" type="Texture" id=1]
 [ext_resource path="res://unit_selection/BuildableUnitSlot.gd" type="Script" id=2]
+[ext_resource path="res://unit_selection/InsufficientFundsContainer.gd" type="Script" id=3]
 
 [node name="BuildableUnitSlot" type="CenterContainer"]
 margin_right = 64.0
@@ -48,3 +49,123 @@ text = "Cost:"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="InsufficientFundsContainer" type="ColorRect" parent="."]
+visible = false
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 32.0
+margin_bottom = 32.0
+color = Color( 1, 0, 0, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InsufficientFundsLabel" type="RichTextLabel" parent="InsufficientFundsContainer"]
+margin_left = -48.0
+margin_top = -48.0
+margin_right = 104.0
+margin_bottom = -32.0
+bbcode_enabled = true
+bbcode_text = "[color=#ff00]INSUFFICIENT FUNDS!"
+text = "INSUFFICIENT FUNDS!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="InsufficientFundsContainer"]
+one_shot = true
+
+[node name="HoverControl" type="Control" parent="."]
+visible = false
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 32.0
+margin_bottom = 32.0
+
+[node name="HoverInfo" type="ColorRect" parent="HoverControl"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -120.0
+margin_right = 104.0
+margin_bottom = -32.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UnitType" type="RichTextLabel" parent="HoverControl/HoverInfo"]
+margin_left = 72.0
+margin_top = 40.0
+margin_right = 152.0
+margin_bottom = 60.0
+rect_scale = Vector2( 0.8, 0.8 )
+
+[node name="GoldCost" type="RichTextLabel" parent="HoverControl/HoverInfo"]
+margin_left = 72.0
+margin_top = 24.0
+margin_right = 152.0
+margin_bottom = 44.0
+rect_scale = Vector2( 0.8, 0.8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UnitTypeLabel" type="RichTextLabel" parent="HoverControl/HoverInfo"]
+margin_top = 40.0
+margin_right = 80.0
+margin_bottom = 60.0
+rect_scale = Vector2( 0.8, 0.8 )
+text = "Unit Type:"
+
+[node name="GoldCostLabel" type="RichTextLabel" parent="HoverControl/HoverInfo"]
+margin_top = 24.0
+margin_right = 80.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.8, 0.8 )
+text = "Gold Cost:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AttackSpeedLabel" type="RichTextLabel" parent="HoverControl/HoverInfo"]
+margin_top = 56.0
+margin_right = 100.0
+margin_bottom = 76.0
+rect_scale = Vector2( 0.8, 0.8 )
+text = "Attack Speed:"
+
+[node name="AttackSpeed" type="RichTextLabel" parent="HoverControl/HoverInfo"]
+margin_left = 72.0
+margin_top = 56.0
+margin_right = 152.0
+margin_bottom = 76.0
+rect_scale = Vector2( 0.8, 0.8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UnitName" type="RichTextLabel" parent="HoverControl/HoverInfo"]
+margin_left = 72.0
+margin_top = 8.0
+margin_right = 152.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.8, 0.8 )
+
+[node name="UnitNameLabel" type="RichTextLabel" parent="HoverControl/HoverInfo"]
+margin_top = 8.0
+margin_right = 80.0
+margin_bottom = 28.0
+rect_scale = Vector2( 0.8, 0.8 )
+text = "Unit Name:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="mouse_entered" from="." to="." method="_on_BuildableUnitSlot_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_BuildableUnitSlot_mouse_exited"]
+[connection signal="timeout" from="InsufficientFundsContainer/Timer" to="InsufficientFundsContainer" method="_on_Timer_timeout"]

@@ -485,7 +485,7 @@ start_node = "Idle"
 
 [sub_resource type="CapsuleShape2D" id=28]
 radius = 8.0
-height = 16.0
+height = 31.9998
 
 [sub_resource type="CircleShape2D" id=37]
 radius = 24.0

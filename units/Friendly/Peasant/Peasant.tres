@@ -11,3 +11,5 @@ unit_name = "Peasant"
 texture = ExtResource( 2 )
 gold_cost = 5
 unit_scene = ExtResource( 3 )
+attack_speed = "Very Slow"
+unit_type = "Melee"
