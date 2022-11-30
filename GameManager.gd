@@ -10,7 +10,7 @@ export var gold = 50 setget gold_display_set
 export var wave_number = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	self.gold = 20
+	self.gold = 30
 
 func gold_display_set(new_value):
 	gold = new_value
@@ -25,7 +25,6 @@ func end_wave():
 	
 func start_wave():
 	wave_number += 1
-	print(wave_number)
 	wave_in_progress = true
 	spawn_enemy()
 	

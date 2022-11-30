@@ -25,6 +25,7 @@ collision_mask = 0
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( 0, 24 )
 shape = SubResource( 6 )
 
@@ -42,6 +43,7 @@ shape = SubResource( 7 )
 [node name="AnimationTree" type="AnimationTree" parent="."]
 
 [node name="HitboxPivot" type="Position2D" parent="."]
+visible = false
 
 [node name="Hitbox" parent="HitboxPivot" instance=ExtResource( 3 )]
 collision_layer = 0
@@ -52,6 +54,7 @@ damage = 2
 max_health = 5
 
 [node name="UnitDetectionZone" type="Area2D" parent="."]
+visible = false
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 5 )
@@ -71,13 +74,14 @@ __meta__ = {
 }
 
 [node name="AttackRange" type="Area2D" parent="."]
+visible = false
 collision_layer = 0
 collision_mask = 4
 script = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange"]
 
-[connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
+[connection signal="area_entered" from="HitboxPivot/Hitbox" to="." method="_on_Hitbox_area_entered"]
 [connection signal="body_entered" from="UnitDetectionZone" to="UnitDetectionZone" method="_on_UnitDetectionZone_body_entered"]
 [connection signal="body_exited" from="UnitDetectionZone" to="UnitDetectionZone" method="_on_UnitDetectionZone_body_exited"]
 [connection signal="area_entered" from="AttackRange" to="." method="_on_AttackRange_area_entered"]

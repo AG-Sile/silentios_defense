@@ -14,5 +14,4 @@ func deselect_unit():
 	selected_unit = null	
 
 func get_unit(unit_index):
-	print(units)
 	units[unit_index]	
