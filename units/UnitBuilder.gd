@@ -6,6 +6,8 @@ export(String) var unit_name = ""
 export(Texture) var texture
 export(int) var gold_cost = 0
 export(PackedScene) var unit_scene
+export(String) var attack_speed
+export(String) var unit_type
 
 func _ready():
 	pass

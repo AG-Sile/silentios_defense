@@ -24,6 +24,12 @@ func _on_SpawnUnitContainer_mouse_entered():
 	if selectable_units.selected_unit is Unit:
 		set_red()
 
-
 func _on_SpawnUnitContainer_mouse_exited():
-	set_no_color()  # Replace with function body.
+	set_no_color()
+
+func _on_HillsUnitContainer_mouse_entered():
+	if selectable_units.selected_unit is Unit:
+		set_red()
+
+func _on_HillsUnitContainer_mouse_exited():
+	set_no_color()  

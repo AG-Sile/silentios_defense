@@ -10,9 +10,9 @@ __meta__ = {
 }
 
 [node name="SpawnGrid" parent="." instance=ExtResource( 1 )]
-margin_left = 80.0
-margin_top = 96.0
-margin_right = 80.0
-margin_bottom = 96.0
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 320.0
+margin_bottom = 384.0
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0

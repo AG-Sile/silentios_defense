@@ -136,7 +136,6 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 640, 360 )
 
 [node name="Hills" parent="Terrain" instance=ExtResource( 5 )]
-visible = false
 margin_bottom = 96.0
 
 [node name="BottomArea" parent="Terrain" instance=ExtResource( 8 )]
@@ -361,7 +360,7 @@ position = Vector2( 800, 352 )
 script = ExtResource( 14 )
 
 [node name="Node2D44" type="Node2D" parent="BuildableUnits"]
-position = Vector2( 856, 352 )
+position = Vector2( 864, 352 )
 script = ExtResource( 14 )
 
 [node name="Node2D45" type="Node2D" parent="BuildableUnits"]
@@ -421,7 +420,7 @@ position = Vector2( 800, 416 )
 script = ExtResource( 14 )
 
 [node name="Node2D59" type="Node2D" parent="BuildableUnits"]
-position = Vector2( 856, 416 )
+position = Vector2( 864, 416 )
 script = ExtResource( 14 )
 
 [node name="Node2D60" type="Node2D" parent="BuildableUnits"]

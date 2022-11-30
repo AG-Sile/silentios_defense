@@ -27,8 +27,10 @@ func _gui_input(event):
 	var wave_in_progress = GameManager.wave_in_progress
 	var can_build = buildable.units[index] == null and wave_in_progress == false 
 	if is_left_button_click and selectable_units.selected_unit is Unit and can_build:
+		var unit_gold_cost = selectable_units.selected_unit.gold_cost
 		buildable.units[index] = selectable_units.selected_unit
 		display_unit(selectable_units.selected_unit)
+		GameManager.gold -= unit_gold_cost
 		selectable_units.deselect_unit()
 		set_no_color()
 	if  event is InputEventMouseButton and event.is_action_released("ui_right_button_click"):

@@ -11,4 +11,7 @@ func _on_UnitDetectionZone_body_entered(body):
 
 
 func _on_UnitDetectionZone_body_exited(body):
+	monitoring = false
 	unit = null
+	monitoring = true
+
