@@ -17,5 +17,4 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	print("TIMEOUT!")
 	visible = false # Replace with function body.

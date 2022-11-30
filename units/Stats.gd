@@ -2,7 +2,9 @@ extends Node
 
 export var max_health = 1
 export var gold_value = 0
+export var damage = 1
 onready var health = max_health setget set_health
+
 
 signal no_health
 

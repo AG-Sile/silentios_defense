@@ -93,6 +93,7 @@ ui_right_button_click={
 2d_physics/layer_3="UnitHurtbox"
 2d_physics/layer_4="EnemyHurtbox"
 2d_physics/layer_5="Enemies"
+2d_physics/layer_6="Soft Collisions"
 
 [physics]
 
