@@ -4,6 +4,8 @@ export var ACCELERATION = 300
 export var MAX_SPEED = 50
 export var FRICTION = 200
 export var attack_type = "single_target"
+export var unit_type = "melee"
+export(PackedScene) var projectile
 
 enum {
 	IDLE,
@@ -50,14 +52,6 @@ func _physics_process(delta):
 func seek_enemies():
 	if enemyDetectionZone.can_seek_enemy():
 		state = CHASE
-	
-#func _on_Hurtbox_area_entered(area):
-#	if area.name == "Hitbox":
-#		var adjusted_damage = min(stats.health, area.damage)
-#		stats.health -= adjusted_damage
-#		healthbar.value -= adjusted_damage
-#		hurtbox.create_hit_effect()
-#		hurtbox.start_invincibility(0.5)
 
 func get_attacked(damage):
 	var adjusted_damage = min(stats.health, damage)
@@ -68,7 +62,7 @@ func decrease_hp(adjusted_damage):
 	stats.health -= adjusted_damage
 	healthbar.value -= adjusted_damage
 	hurtbox.create_hit_effect()
-	hurtbox.start_invincibility(0.5)
+	hurtbox.start_invincibility(0.1)
 
 
 func chase_state(delta):
@@ -114,8 +108,18 @@ func _on_Hitbox_area_entered(area):
 		if attack_type == "single_target":
 			if null_target == true:
 				single_attack_target = hurt_unit
-				hurt_unit.get_attacked(stats.damage)
+				attack_unit(hurt_unit)
 			elif null_target == false && single_attack_target == hurt_unit:
-				hurt_unit.get_attacked(stats.damage)
+				attack_unit(hurt_unit)
 		elif attack_type == "splash_damage":
-			hurt_unit.get_attacked(stats.damage)
+			attack_unit(hurt_unit)
+
+func attack_unit(hurt_unit):
+	if unit_type == "melee":
+		hurt_unit.get_attacked(stats.damage) 
+	else:
+		var projectile_instance = projectile.instance()
+		add_child(projectile_instance)
+		projectile_instance.global_position = global_position
+		var direction = (hurt_unit.global_position - global_position).normalized()
+		projectile_instance.throw_arrow(direction, stats.damage, attack_type,  200)
