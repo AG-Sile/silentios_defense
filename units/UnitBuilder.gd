@@ -8,6 +8,7 @@ export(int) var gold_cost = 0
 export(PackedScene) var unit_scene
 export(String) var attack_speed
 export(String) var unit_type
+export(PackedScene) var projectile
 
 func _ready():
 	pass

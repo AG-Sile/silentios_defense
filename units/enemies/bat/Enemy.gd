@@ -67,7 +67,6 @@ func decrease_hp(adjusted_damage):
 	stats.health -= adjusted_damage
 	healthbar.value -= adjusted_damage
 	hurtbox.create_hit_effect()
-	hurtbox.start_invincibility(0.5)
 
 func chase_state(delta):
 	var unit = unitDetectionZone.unit

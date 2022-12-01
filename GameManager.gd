@@ -26,9 +26,9 @@ func end_wave():
 func start_wave():
 	wave_number += 1
 	wave_in_progress = true
-	spawn_enemy()
+	spawn_enemies()
 	
-func spawn_enemy():
+func spawn_enemies():
 	var wave_enemies_info = wave_resource.new().wave_enemies[wave_number]
 	var main = get_tree().current_scene
 	var spawnable_unit_node = main.get_node("SpawnableUnits")

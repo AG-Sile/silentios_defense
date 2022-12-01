@@ -1,13 +1,17 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=5 format=2]
 
 [ext_resource path="res://units/UnitBuilder.gd" type="Script" id=1]
 [ext_resource path="res://units/Friendly/Archer/ArcherLive.tscn" type="PackedScene" id=2]
+[ext_resource path="res://units/Friendly/Archer/single_archer.png" type="Texture" id=3]
+[ext_resource path="res://units/Friendly/Archer/ArrowProjectile.tscn" type="PackedScene" id=4]
 
 [resource]
 script = ExtResource( 1 )
 selected = false
 unit_name = "Archer"
+texture = ExtResource( 3 )
 gold_cost = 10
 unit_scene = ExtResource( 2 )
-attack_speed = ""
+attack_speed = "Slow"
 unit_type = "ranged"
+projectile = ExtResource( 4 )

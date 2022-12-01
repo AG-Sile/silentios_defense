@@ -498,6 +498,9 @@ script = ExtResource( 4 )
 [node name="CollisionShape2D" parent="Enemy" index="0"]
 position = Vector2( 0, 0 )
 
+[node name="Hurtbox" parent="Enemy" index="1"]
+visible = false
+
 [node name="Sprite" parent="Enemy" index="2"]
 texture = ExtResource( 2 )
 hframes = 4
@@ -540,10 +543,8 @@ shape = SubResource( 28 )
 disabled = true
 
 [node name="Stats" parent="Enemy" index="6"]
+max_health = 15
 gold_value = 5
-
-[node name="CollisionShape2D" parent="Enemy/UnitDetectionZone" index="0"]
-visible = false
 
 [node name="Healthbar" parent="Enemy" index="8"]
 margin_left = -24.0
