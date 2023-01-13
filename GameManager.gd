@@ -16,10 +16,8 @@ func start_game():
 	self.gold = 50
 	
 func gold_display_set(new_value):
-	print("setting gold")
 	gold = new_value
 	var main = get_tree().current_scene	
-	print(main)
 	var gold_display = main.get_node("WaveManager/GoldAndWaveLabels/GoldAmount")
 	gold_display.text = str(gold)
 
