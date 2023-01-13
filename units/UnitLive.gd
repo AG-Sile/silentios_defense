@@ -6,7 +6,7 @@ export var FRICTION = 200
 export var attack_type = "single_target"
 export var unit_type = "melee"
 export(PackedScene) var projectile
-
+export var projectile_speed = 200
 enum {
 	IDLE,
 	CHASE,
@@ -19,6 +19,7 @@ onready var animationTree = $AnimationTree
 onready var animationPlayer = $AnimationPlayer2
 onready var animationState = animationTree.get("parameters/playback")
 onready var hitbox = $HitboxPivot/Hitbox
+onready var hitbox_collision = $HitboxPivot/Hitbox/CollisionShape2D
 onready var enemyDetectionZone = $EnemyDetectionZone
 onready var hurtbox = $Hurtbox
 onready var sprite = $Sprite2
@@ -30,6 +31,7 @@ onready var single_attack_target = null
 func _ready():
 	healthbar.max_value = stats.max_health
 	healthbar.value = stats.max_health
+	hitbox_collision.disabled = true
 	animationTree.active = true
 	animationState.travel("Idle")
 	state = IDLE
@@ -37,6 +39,7 @@ func _ready():
 func _physics_process(delta):
 	match state:
 		IDLE:
+			hitbox_collision.disabled = true
 			sprite.visible = true
 			attack_sprite.visible = false			
 			velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
@@ -80,6 +83,7 @@ func chase_state(delta):
 		animationTree.set("parameters/Attack/blend_position", velocity)
 	elif is_instance_valid(enemy) and enemy_in_attack_range == true:
 		var direction = (enemy.global_position - global_position).normalized()		
+		animationState.travel("Attack")
 		velocity = velocity.move_toward(direction * MAX_SPEED, 10 * delta)
 		velocity = move_and_slide(velocity)		
 		state = ATTACK
@@ -95,6 +99,8 @@ func attack_state():
 func attack_animation_finished():
 	sprite.visible = true
 	attack_sprite.visible = false
+	hitbox_collision.disabled = false
+	hitbox_collision.disabled = true
 	state = IDLE
 
 
@@ -103,6 +109,7 @@ func _on_AttackRange_area_entered(area):
 
 func _on_Hitbox_area_entered(area):
 	if area.name == "Hurtbox":
+		print("hitbox area entered")
 		var hurt_unit = area.get_node("..")
 		var null_target = is_instance_valid(single_attack_target) == false
 		if attack_type == "single_target":
@@ -122,4 +129,10 @@ func attack_unit(hurt_unit):
 		add_child(projectile_instance)
 		projectile_instance.global_position = global_position
 		var direction = (hurt_unit.global_position - global_position).normalized()
-		projectile_instance.throw_arrow(direction, stats.damage, attack_type,  200)
+		projectile_instance.get_node("Projectile").throw_arrow(
+			direction, 
+			stats.damage, 
+			attack_type,  
+			projectile_speed
+		)
+	hitbox_collision.disabled = true	

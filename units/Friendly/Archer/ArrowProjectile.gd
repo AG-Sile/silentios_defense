@@ -1,21 +1,25 @@
 extends KinematicBody2D
 
 var velocity = Vector2.ZERO
-export var ACCELERATION = 300
-export var MAX_SPEED = 100
+export var acceleration = 400
+export var speed = 100
 var direction = Vector2.ZERO
 var damage = 0
 var single_attack_target = null
 var attack_type = "single_target"
+onready var sprite = $Sprite
 
 func _process(delta):
-	velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
-	velocity = move_and_slide(velocity)	
+	sprite.rotation = direction.angle()
+	velocity = velocity.move_toward(direction * speed, acceleration * delta)
+	velocity = move_and_slide(velocity)
 
-func throw_arrow(projectile_direction, projectile_damage, projectile_attack_type, speed):
+func throw_arrow(projectile_direction, projectile_damage, projectile_attack_type, projectile_speed):
 	damage = projectile_damage
 	direction = projectile_direction
 	attack_type = projectile_attack_type
+	speed = projectile_speed
+	acceleration = projectile_speed
 
 func _on_Area2D_area_entered(area):
 	if area.name == "Hurtbox":

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://units/UnitLive.tscn" type="PackedScene" id=1]
 [ext_resource path="res://units/Friendly/Archer/ArcherSpritesheet.png" type="Texture" id=2]
-[ext_resource path="res://units/Friendly/Archer/ArrowProjectile.tscn" type="PackedScene" id=3]
+[ext_resource path="res://units/Friendly/Archer/Arrow.tscn" type="PackedScene" id=3]
 [ext_resource path="res://units/Friendly/Peasant/PeasantLive.gd" type="Script" id=4]
 
 [sub_resource type="CircleShape2D" id=38]
@@ -455,6 +455,7 @@ script = ExtResource( 4 )
 scale = Vector2( 1, 1 )
 unit_type = "ranged"
 projectile = ExtResource( 3 )
+projectile_speed = 1000
 
 [node name="CollisionShape2D" parent="UnitLive" index="0"]
 shape = SubResource( 38 )
@@ -494,9 +495,9 @@ anims/WalkUp = SubResource( 15 )
 tree_root = SubResource( 3 )
 anim_player = NodePath("../AnimationPlayer2")
 parameters/playback = SubResource( 4 )
-parameters/Attack/blend_position = Vector2( 0, 0 )
-parameters/Idle/blend_position = Vector2( 0.0777988, -0.301724 )
-parameters/Walk/blend_position = Vector2( -0.0189753, 0.456897 )
+parameters/Attack/blend_position = Vector2( 1, 0 )
+parameters/Idle/blend_position = Vector2( 1, 0 )
+parameters/Walk/blend_position = Vector2( 1, 0 )
 
 [node name="CollisionShape2D" parent="UnitLive/HitboxPivot/Hitbox" index="0"]
 shape = SubResource( 36 )

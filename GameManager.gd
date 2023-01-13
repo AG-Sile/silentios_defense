@@ -6,15 +6,20 @@ var spawn_area_grid = preload("res://spawn_area/SpawnAreaGridContainer.tscn")
 var spawnable_unit = preload("res://SpawnableUnit.tscn")
 var enemies = 0
 onready var wave_in_progress = false
-export var gold = 50 setget gold_display_set
+export onready var gold setget gold_display_set
 export var wave_number = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	self.gold = 30
+	pass
 
+func start_game():
+	self.gold = 50
+	
 func gold_display_set(new_value):
+	print("setting gold")
 	gold = new_value
 	var main = get_tree().current_scene	
+	print(main)
 	var gold_display = main.get_node("WaveManager/GoldAndWaveLabels/GoldAmount")
 	gold_display.text = str(gold)
 

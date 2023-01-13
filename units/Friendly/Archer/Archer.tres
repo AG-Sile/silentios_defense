@@ -3,7 +3,7 @@
 [ext_resource path="res://units/UnitBuilder.gd" type="Script" id=1]
 [ext_resource path="res://units/Friendly/Archer/ArcherLive.tscn" type="PackedScene" id=2]
 [ext_resource path="res://units/Friendly/Archer/single_archer.png" type="Texture" id=3]
-[ext_resource path="res://units/Friendly/Archer/ArrowProjectile.tscn" type="PackedScene" id=4]
+[ext_resource path="res://units/Friendly/Archer/Arrow.tscn" type="PackedScene" id=4]
 
 [resource]
 script = ExtResource( 1 )
